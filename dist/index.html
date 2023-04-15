@@ -7,7 +7,26 @@
 </head>
 <body>
   <h1 class="text-3xl font-bold underline">
-    Hello world!
+    Prédiction d'affluence aux urgences
   </h1>
 </body>
+<form action="/submit-form" method="POST">
+    <label for="date">Date :</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="full-moon">Pleine lune :</label>
+    <input type="checkbox" id="full-moon" name="full-moon" value="yes">
+
+    <label for="holidays">Vacances :</label>
+    <input type="checkbox" id="vacances" name="vacances" value="yes">
+  
+    <label for="match">Match :</label>
+    <input type="checkbox" id="match" name="match" value="yes">
+  
+    <label for="alert">Alerte :</label>
+    <input type="checkbox" id="alert" name="alert" value="yes">
+  
+    <input type="submit" value="Envoyer">
+  </form>
+  
 </html>
